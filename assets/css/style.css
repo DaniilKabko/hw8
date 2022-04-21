@@ -6,7 +6,10 @@
   text-align: center;
   font-size: 22px;
   font-family: sans-serif;
+ 
 }
+
+
 
 .title-container{
   font-size: 2em;
@@ -37,6 +40,7 @@
 
 .user__content {
   padding: 0 30px;
+
 }
 
 .avatar__img {
@@ -49,17 +53,26 @@
   object-fit: cover;
   object-position: top center;
   background-color: white;
+
 }
 
 .user__full-name {
   margin-top: 20px;
   text-transform: capitalize;
+  min-width: calc(var(--img-size) * 0.5);
+  width: 100%;
+  max-width: calc(var(--img-size) * 5);
 }
 
 .user__address {
   margin-top: 10px;
   font-size: 0.75em;
-
+  --img-size: 100px;
+  min-width: calc(var(--img-size) * 1.5);
+  width: 100%;
+  max-width: calc(var(--img-size) * 2);
+  
+  display: inline-block;
 }
 
 .user__actions {
@@ -79,26 +92,42 @@
   color: white;
   text-transform: capitalize;
   font-size: 0.6em;
-
+  --img-size: 100px;
+  min-width: calc(var(--img-size) * 0.5);
+  width: 100%;
+  max-width: calc(var(--img-size) * 1.5);
+  
+  display: inline-block;
 }
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+ 
+} 
+
 
 .btn--follow {
   background-color: rgb(81 170 75);
+
 }
 
 .btn--send {
   background-color: var(--main-bg-color)
+ 
 }
 
 .user__description {
   margin-bottom: 30px;
   font-size: 0.7em;
   line-height: 1.5em;
+  
 }
 
 .user__footer {
   background-color: var(--main-bg-color);
   padding: 15px;
+  
 }
 
 .social__item {
